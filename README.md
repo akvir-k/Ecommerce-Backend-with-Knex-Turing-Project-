@@ -22,6 +22,7 @@ Next, you've to install mysql-database onto your system. For this, write these f
 ```$ sudo apt-get install mysql-server```
 
 Next, you need to install some NPM on your project.
+
 ``` cookie-parser```
 ``` body-parser```
 ``` jsonwebtoken```
@@ -30,7 +31,7 @@ You can also check the version of NodeJS and npm by writing, node -v and npm -v 
 Next, you need to make a clone of this repository and get into the repository on your terminal. Now, you need to install the required dependencies from your package.json file. For this, you've to write sudo npm install.
 
 There is a ***data.sql*** file already present in the database/ folder. You have to import this file to an empty database. For this, make a new database first, and navigate to the database/ directory and then write the following commands:
-Import the schema using ```mysql -u <user_name> -p <database_name> < tshirtshop.sql```
+Import the schema using ```mysql -u <user_name> -p <database_name> < data.sql```
 For checking the data, log into your user, by writing ```mysql -u <user_name> -p```. You would be asked for your password. Now, you can use database with all its tables' data.
 
 Next, navigate to the folder where, ***server.js*** file is located. You can start the local server by writing node server.js on the terminal.
